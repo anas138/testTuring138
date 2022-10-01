@@ -1,0 +1,53 @@
+.chatbox-container{
+    border-radius: 5px;
+    text-align: center;
+    height: 650px;
+    width: 400px;
+    background-color: lightgrey;
+    
+}
+.chat-header{
+    display: flex;
+    border: 1px solid lightgrey;
+    font-weight: bold;
+    font-size: 15px;
+    position: relative;
+
+
+
+}
+.chat-header div{
+    
+    position:relative;
+}
+.chats{
+    width: 85%;
+    border-radius: 20px;
+    height: 50px;
+    margin: 0px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid lightgrey;
+}
+
+.inbox-detail span{
+    font-size: small;
+   
+}
+.inbox-detail{
+    display: flex;
+    align-items: center;
+}
+.activity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    padding-right: 30px;
+    border-bottom-right-radius: 30px;
+}
+
