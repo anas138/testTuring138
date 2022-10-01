@@ -10,7 +10,7 @@ function Chatbox() {
     useEffect(()=>{
       axios.get("https://aircall-job.herokuapp.com/activities")
       .then((res=>{
-          console.log(res.data)
+          
           setInbox(res.data)
       }))
     },[])
@@ -92,7 +92,6 @@ function Chatbox() {
         axios.post(`https://aircall-job.herokuapp.com/activities/${id}`,{
                 is_archived: true       
         }).then(res=>{
-            console.log(res.data)
             const unarchive = inbox.filter((f)=>(f.id!==res.data.id))
             setInbox(unarchive)
         })
